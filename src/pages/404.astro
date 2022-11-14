@@ -1,13 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Back from '../components/Back.astro';
 ---
 
 <Layout title='404'>
   <main>
-    <h1>Parece que te has perdido</h1>
-    <a href='/'>
-      <button> Volver</button>
-    </a>
+    <h1>May be you are lost....</h1>
+    <Back />
   </main>
 </Layout>
 <style>
@@ -23,17 +22,5 @@ import Layout from '../layouts/Layout.astro';
   h1 {
     width: 100%;
     text-align: center;
-  }
-  button {
-    border: none;
-    background-color: whitesmoke;
-    color: black;
-    font-weight: 900;
-    width: fit-content;
-    padding: 10px;
-    box-shadow: 2px 2px 2px -1px gray;
-  }
-  button:hover {
-    box-shadow: 0 0 0 0 gray;
   }
 </style>
